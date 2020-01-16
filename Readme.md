@@ -1,15 +1,15 @@
 # Get started with the blog application
 ### Introduction
 This Blog-application has been developed with the following technology-stack:
-#### Backend
+#### Part 1: Backend
 * Express.js (middleware, model-view-controller)
 * Alasql.js (simple file-based database)
 * Node.js (webbased backend infrastructure)
 
-#### Frontend
+#### Part 2: Frontend
 * Vue.js (component-based user-interfaces)
 * babel (transpiler, compatibility of new ECMAScript 6 and higher to ECMAScript 5)
-* 
+
 
 ## Part 1: Installing the backend with a REST-API
 ### Prerequisite
@@ -32,10 +32,13 @@ and then type  in the administrator password.
 In the following installation guide the `sudo`-command is omitted. But be aware of the if you're an Apple user without default administrator privileges.
 
 ### Installation guide
-Step 1: Download the zip-file and extract the app     
-Step 2: Change into the app directory i.e.
+Step 1: Clone the code from this repo from the command-line
 ```
-cd blog-ven
+git clone https://github.com/bzzlab/blog-env-server.git
+```
+Step 2: Change into the app directory
+```
+cd blog-ven-server
 ```
 Step 3: Install app dependencies
 ```
@@ -50,25 +53,9 @@ Step 5: Run application
 npm run serve-dev
 ```
 
+
 ### FAQ
 
-
-#### How to debug a node app?
-See for details [here](https://nodejs.org/en/docs/guides/debugging-getting-started/). The important 
-options is
-```
---inspect-brk=127.0.0.1:3000
-```
-Blow the image *Edit Configuration ...* in WebStorm
-![alt text](doc/webstorm-node-debug-option.png "WebStorm-IDE Node")
-
-
-#### Which IDE (integrated development environment) is suitable?
-There are a lot of good IDE's. The following ide are widespread
-* [WebStorm](https://www.jetbrains.com/webstorm/) from Jetbrains (my preference)
-* [Visual Studio Code](https://code.visualstudio.com/download) from Microsoft 
-
- 
 ### How to test the REST-API
 
 #### With curl
@@ -136,7 +123,22 @@ Example response:
 }
 ```
 
-### Helpers and Quirks
+### Tools, helpers and quirks
+#### Which IDE (integrated development environment) is suitable?
+There are a lot of good IDE's. The following ide are widespread
+* [WebStorm](https://www.jetbrains.com/webstorm/) from Jetbrains (my preference)
+* [Visual Studio Code](https://code.visualstudio.com/download) from Microsoft 
+
+
+
+#### How to debug a node app?
+See for details [here](https://nodejs.org/en/docs/guides/debugging-getting-started/). The important 
+options is
+```
+--inspect-brk=127.0.0.1:3000
+```
+Blow the image *Edit Configuration ...* in WebStorm
+![alt text](doc/webstorm-node-debug-option.png "WebStorm-IDE Node")
 
 #### Start building production code including a watch 
 ```
