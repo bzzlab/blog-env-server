@@ -46,11 +46,11 @@ npm install
 ```
 Step 4: Build application
 ```
-npm run build-dev
+npm run build-server
 ```
 Step 5: Run application
 ```
-npm run serve-dev
+npm run run-server
 ```
 
 ## Part 2: Testing the backend over the given REST-API
