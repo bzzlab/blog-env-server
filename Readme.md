@@ -1,12 +1,12 @@
 # Get started with the blog application
 ### Introduction
 This Blog-application has been developed with the following technology-stack:
-#### Part 1: Backend
+#### Backend
 * Express.js (middleware, model-view-controller)
 * Alasql.js (simple file-based database)
 * Node.js (webbased backend infrastructure)
 
-#### Part 2: Frontend
+#### Frontend (external repo)
 * Vue.js (component-based user-interfaces)
 * babel (transpiler, compatibility of new ECMAScript 6 and higher to ECMAScript 5)
 
@@ -53,10 +53,7 @@ Step 5: Run application
 npm run serve-dev
 ```
 
-
-### FAQ
-
-### How to test the REST-API
+## Part 2: Testing the backend over the given REST-API
 
 #### With curl
 curl is command-line based tool which is to used to submit HTTP-requests and sending data to the backend 
