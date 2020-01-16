@@ -4,15 +4,8 @@
   "description": "blog app with Vue, Express and Node",
   "main": "index.js",
   "scripts": {
-    "client": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build-client": "webpack --mode=development --config webpack.config.js",
-    "sass-watch": "node-sass -w src/assets/scss -o src/assets/styles --recursive",
-    "sass": "node-sass src/assets/scss -o src/assets/styles --recursive",
-    "build-all": "set NODE_ENV=development && npm run sass && babel dev-server --out-dir prod-server && webpack --mode=development --config webpack.config.js",
     "build-server": "set NODE_ENV=development && babel dev-server --out-dir prod-server",
-    "run-all": "concurrently \"set NODE_ENV=development\" \"babel dev-server --out-dir prod-server --watch\" \"nodemon prod-server/index.js\" \"npm run client\" ",
-    "run-server": "concurrently \"set NODE_ENV=development\" \"babel dev-server --out-dir prod-server --watch\" \"nodemon prod-server/index.js\" ",
-    "temp": "set NODE_ENV=development && nodemon prod-server/index.js"
+    "run-server": "concurrently \"set NODE_ENV=development\" \"babel dev-server --out-dir prod-server --watch\" \"nodemon prod-server/index.js\" "
   },
   "keywords": [
     "ict",
