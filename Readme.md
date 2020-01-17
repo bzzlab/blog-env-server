@@ -38,7 +38,7 @@ git clone https://github.com/bzzlab/blog-env-server.git
 ```
 Step 2: Change into the app directory
 ```
-cd blog-ven-server
+cd blog-env-server
 ```
 Step 3: Install app dependencies
 ```
