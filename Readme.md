@@ -34,11 +34,11 @@ In the following installation guide the `sudo`-command is omitted. But be aware 
 ### Installation guide
 Step 1: Clone the code from this repo from the command-line
 ```
-git clone https://github.com/bzzlab/blog-env-server.git
+git clone https://github.com/bzzlab/blog-ven-server.git
 ```
 Step 2: Change into the app directory
 ```
-cd blog-env-server
+cd blog-ven-server
 ```
 Step 3: Install app dependencies
 ```
