@@ -52,7 +52,7 @@ export function remove(req,res) {
 export async function createDb(req,res, next) {
     try {
         let new_blogEntry = new Blog(
-            "test-nickname",
+            req.body.nickname.toLowerCase(),
             req.body.title.toLowerCase(),
             req.body.content.toLowerCase()
         );
